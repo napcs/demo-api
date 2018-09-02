@@ -40,12 +40,40 @@ To install, download the latest release to your system and copy the executable t
 * `PUT/PATCH` support
 * tests
 * refactoring
-* help switch
-* version notice
 
 ## Contributing
 
-Please contribute. Fork, create a PR.
+Please contribute.
+
+Clone the repository and then download the dependencies:
+
+```
+$ go get github.com/Jeffail/gabs
+$ go get github.com/gin-gonic/gin
+$ go get github.com/codegangsta/gin
+```
+
+Run development version:
+
+```
+$ gin go run app.go
+```
+
+The server is now listening on `localhost:3000` and will reload on code change.
+
+Make changes, create a PR. 
+
+## History
+
+* 2018-09-02 - v0.2.0
+  * Refactoring to make testing possible
+  * Adds test suite
+  * Supports `-v` option to show version
+  * Supports `-f` option to specify the data file
+  * Supports `-p` option to specify the port
+  * Fix bug where querying non-existant ID still returned a 200 status code instead of 404
+* 2018-08-30 - v0.1.0
+  * initial release
 
 ## License
 

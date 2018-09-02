@@ -1,4 +1,6 @@
 dist
 gin-bin
 data.json
+test.json
+test.tmp
 .DS_Store
